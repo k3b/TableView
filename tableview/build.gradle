@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'com.evrencoskun.tableview'
     compileSdkVersion compile_sdk_version
 
     defaultConfig {
@@ -86,7 +87,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
+                from components.findByName('release')
 
                 groupId = 'com.evrencoskun.library'
                 artifactId = 'tableview'

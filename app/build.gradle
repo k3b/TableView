@@ -25,6 +25,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.evrencoskun.tableviewsample'
     compileSdkVersion compile_sdk_version
 
     defaultConfig {
